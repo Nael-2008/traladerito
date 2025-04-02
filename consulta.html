@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF 8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta General</title>
+	  <link rel="stylesheet" href="styles.css"> 
+    <style>
+       /* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007bff;
+    display: none; /* Oculto inicialmente */
+}
+
+.submenu li {
+    padding: 5px 15px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+.menu-item:hover .submenu {
+    display: block; /* Mostrar submenú al pasar el ratón */
+}
+
+
+
+header {
+    background: linear-gradient(90deg, #007bff, #00c6ff); /* De azul oscuro a azul claro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background: linear-gradient(90deg, #333, #555); /* De gris oscuro a gris medio */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.barra-lateral {
+    background: linear-gradient(180deg, #cce5ff, #007bff); /* De azul claro a azul intenso */
+    padding: 15px;
+    color: white; /* Color de texto blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+
+.barra-lateral h2 {
+    color: #ffffff; /* Texto blanco para destacar en el fondo azul */
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li a {
+    color: #cce5ff; /* Azul claro para enlaces */
+    text-decoration: none;
+    font-weight: bold; /* Para mayor visibilidad */
+}
+
+.barra-lateral ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* Cambia a blanco al pasar el ratón */
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Barra lateral */
+.barra-lateral {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.barra-lateral ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    flex: 3;
+    padding: 15px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+        section {
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        article {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<img src="img/A.png" alt="Producto 4" width="200" height="100">
+     <header>
+    <nav>
+        <ul class="menu">
+            <a href="index.html">Inicio</a>
+            
+            <li class="menu-item">
+                <a href="#nosotros">¿Qui&eacute;nes Somos?</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="mision.html">Misión</a></li>
+                    <li><a href="mision.html">Visión</a></li>
+                    <li><a href="mision.html">Valores</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#servicios">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="consulta.html">Consulta General</a></li>
+                    <li><a href="medicina.html">Medicina Preventiva</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="telemedicina.html">Telemedicina</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#ofertas">Ofertas</a>
+                <ul class="submenu">
+                    <li><a href="oferta-relampago.html">Oferta Relámpago</a></li>
+                    <li><a href="mas-vendidos.html">Más Vendidos</a></li>
+                    <li><a href="descuentos.html">Descuentos</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#contactanos">Contáctanos</a>
+                <ul class="submenu">
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="telefono.html">Teléfono</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <section>
+        <article>
+            <h2>Conversaciones ilimitadas con Médicos</h2>
+            <p>Conecta con un Médico especialista en minutos. Sin necesidad de pedir cita o de esperar semanas. Tarifas asequibles.</p>
+        </article>
+        <article>
+            <h2>Expertos en todas las Especialidades</h2>
+            <p>Pediatría, Oncología, Salud Sexual, Endocrinología, Urología, Medicina Familiar y mucho más. Nuestra amplia red de médicos puede responder a todas tus preguntas ahora mismo.</p>
+        </article>
+        <article>
+            <h2>Para toda la familia</h2>
+            <p>Ayuda a tus familiares y amigos. Aclara con un Médico esos problemas que les preocupan y no se atreven a preguntar, y ayúdales a estar más tranquilos y saludables.</p>
+        </article>
+        <article>
+            <h2>A cualquier hora</h2>
+            <p>Médicos de todas las especialidades están disponibles para ayudarte las 24 horas el día.  Incluso los días festivos. A Excepción de sábados y domingos.</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>¿Cómo te pueden ayudar los Médicos?</h2>
+        <ul>
+            <li>Síntomas de enfermedades</li>
+            <li>Tratamientos y dosis de fármacos</li>
+            <li>Análisis y pruebas médicas</li>
+            <li>Cómo prevenir enfermedades</li>
+        </ul>
+        <p>Pregunta a Pediatras, Traumatólogos, Cirujanos, Sexólogos, Urólogos, Neurólogos y Médicos de Familia, entre otros especialistas.</p>
+    </section>
+
+    <section>
+        <h2>Opiniones de los Médicos</h2>
+        <article>
+            <h3>Dr. Cabrerera</h3>
+            <p>?????</p>
+            <p>Atender las dudas de los pacientes... sin importar la distancia a la que se encuentren y de manera inmediata, se ha convertido en parte de mi práctica clínica cotidiana.</p>
+        </article>
+        <article>
+            <h3>Dra. Débora Palma</h3>
+            
+            <p>Es una página que me permite ayudar a los clientes en sus problemas médicos de forma directa, segura y privada.</p>
+        </article>
+        <article>
+            <h3>Dr. David Murillo</h3>
+           
+            <p>Me encanta participar... ya que me permite ayudar e interactuar con personas de todas partes del mundo que en muchas de las ocasiones no pueden acudir a una consulta médica presencial.</p>
+        </article>
+    </section>
+
+  
+      <footer>
+	    <p>&copy; 2025 Alfamed online. Todos los derechos reservados a Mou Benito y Nael de Jésus.Consulta</p>
+	    
+
+    </footer>
+</body>
+</html>

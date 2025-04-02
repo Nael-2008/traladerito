@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+	  <link rel="stylesheet" href="styles.css"> 
+   <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido */
+    }
+    h1, h2 {
+        color: #4CAF50;
+        text-align: center;
+    }
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+        text-align: center; /* Centra el texto */
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        max-width: 500px; /* Limita el ancho para centrar */
+    }
+    input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%; /* Asegura que los campos estén alineados */
+        box-sizing: border-box;
+    }
+    button {
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+</head>
+<body>
+<img src="img/A.png" alt="Producto 4" width="200" height="100">
+ <header>
+    <nav>
+        <ul class="menu">
+            <a href="index.html">Inicio</a>
+            
+            <li class="menu-item">
+                <a href="#nosotros">¿Quiénes Somos?</a>
+                <ul class="submenu">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="mision.html">Misión</a></li>
+                    <li><a href="mision.html">Visión</a></li>
+                    <li><a href="mision.html">Valores</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#servicios">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="consulta.html">Consulta General</a></li>
+                    <li><a href="medicina.html">Medicina Preventiva</a></li>
+                    <li><a href="especialidades.html">Especialidades</a></li>
+                    <li><a href="telemedicina.html">Telemedicina</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#ofertas">Ofertas</a>
+                <ul class="submenu">
+                    <li><a href="oferta-relampago.html">Oferta Relámpago</a></li>
+                    <li><a href="mas-vendidos.html">Más Vendidos</a></li>
+                    <li><a href="descuentos.html">Descuentos</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="#contactanos">Contáctanos</a>
+                <ul class="submenu">
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="telefono.html">Teléfono</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </header>
+
+
+    <div class="container">
+        <h1>Contactate con nosotros</h1>
+        
+        <h2>Nuestra dirección</h2>
+        <p><b>Dirección:</b></p>
+        <p>Alfamed Online </p>
+        <p>Matriz principal ubicada en Zacatecas</p>
+        <p><b>Teléfono:</b> (33) 18146879</p>
+        
+        <h2>Formulario de contacto</h2>
+        <form action="/procesar_formulario" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="asunto">Teléfono:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            
+            <label for="codigo">Introduzca el código en la casilla de abajo:</label>
+            <input type="text" id="codigo" name="codigo" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+	
+	<footer>
+        <p>&copy; 2025 Alfamed online. Todos los derechos reservados a Mou Benito y Nael de Jésus.Formulario</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+  table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+
+/* Encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+	}
+	.submenu a {
+    text-align: center; /* Centra el texto dentro del submenú */
+    display: block; /* Asegura que el enlace ocupe todo el ancho de su contenedor */
+}
+
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #007bff;
+    display: none; /* Oculto inicialmente */
+}
+
+.submenu li {
+    padding: 5px 15px;
+}
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    text-decoration: underline;
+}
+
+.menu-item:hover .submenu {
+    display: block; /* Mostrar submenú al pasar el ratón */
+}
+
+
+
+header {
+    background: linear-gradient(90deg, #007bff, #00c6ff); /* De azul oscuro a azul claro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background: linear-gradient(90deg, #333, #555); /* De gris oscuro a gris medio */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.barra-lateral {
+    background: linear-gradient(180deg, #cce5ff, #007bff); /* De azul claro a azul intenso */
+	
+    padding: 15px;
+    color: white; /* Color de texto blanco para contraste */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+
+.barra-lateral h2 {
+    color: #ffffff; /* Texto blanco para destacar en el fondo azul */
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li a {
+    color: #cce5ff; /* Azul claro para enlaces */
+    text-decoration: none;
+    font-weight: bold; /* Para mayor visibilidad */
+}
+
+.barra-lateral ul li a:hover {
+    text-decoration: underline;
+    color: #ffffff; /* Cambia a blanco al pasar el ratón */
+}
+
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Barra lateral */
+.barra-lateral {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    max-width: 300px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.barra-lateral ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    flex: 3;
+    padding: 15px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
